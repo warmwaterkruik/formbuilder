@@ -4,20 +4,22 @@ Formbuilder.registerField 'price',
 
   view: """
     <div class='input-line'>
-      <span class='above-line'>$</span>
+      <span class='above-line'>€</span>
       <span class='dolars'>
         <input type='text' />
-        <label>Dollars</label>
+        <label>Euro</label>
       </span>
       <span class='above-line'>.</span>
       <span class='cents'>
         <input type='text' />
-        <label>Cents</label>
+        <label>Cent</label>
       </span>
     </div>
   """
 
-  edit: ""
+  edit: """
+    <%= Formbuilder.templates['edit/group']() %>
+  """
 
   addButton: """
     <span class="symbol"><span class="fa fa-usd"></span></span> Price

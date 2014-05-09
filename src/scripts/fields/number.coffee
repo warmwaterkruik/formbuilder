@@ -10,6 +10,7 @@ Formbuilder.registerField 'number',
   """
 
   edit: """
+    <%= Formbuilder.templates['edit/group']() %>
     <%= Formbuilder.templates['edit/min_max']() %>
     <%= Formbuilder.templates['edit/units']() %>
     <%= Formbuilder.templates['edit/integer_only']() %>

@@ -17,6 +17,7 @@ Formbuilder.registerField 'dropdown',
   """
 
   edit: """
+    <%= Formbuilder.templates['edit/group']() %>
     <%= Formbuilder.templates['edit/options']({ includeBlank: true }) %>
   """
 

@@ -32,7 +32,9 @@ Formbuilder.registerField 'time',
     </div>
   """
 
-  edit: ""
+  edit: """
+    <%= Formbuilder.templates['edit/group']() %>
+  """
 
   addButton: """
     <span class="symbol"><span class="fa fa-clock-o"></span></span> Time
